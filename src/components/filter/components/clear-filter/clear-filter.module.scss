@@ -1,0 +1,15 @@
+.clearFilters {
+  display: block;
+  background-color: rgb(19, 92, 5);
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 20px;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

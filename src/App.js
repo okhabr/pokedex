@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+
+import store from './store/root.store';
+import style from './App.module.scss';
+
+import {PokemonsList} from './components/pokemons-list/pokemons-list.component';
+import {PokemonDetails} from './components/pokemon-details/pokemon-details.component';
+import {LoadMore} from './components/load-more/load-more.component';
+import {PokemonTypes} from './components/filter/filter.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className={style.page__container}>
+        <h1 className={style.page__header}>Pokedex</h1>
+        <PokemonTypes/>
+        <div className={style.page__content}>
+          <div className={style.page__content_list}>
+            <PokemonsList/>
+            <LoadMore/>
+          </div> 
+          <PokemonDetails className={style.page__content_details}/>
+        </div>
+      </div>
+    </Provider>
   );
 }
 

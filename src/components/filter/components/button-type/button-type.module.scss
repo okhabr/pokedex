@@ -1,0 +1,84 @@
+button {
+  text-transform: capitalize;
+  display: inline;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+}
+
+.type {
+  &_normal {
+    background-color: rgb(187, 233, 126);
+  }
+  &_fighting {
+    background: rgb(204, 5, 5);
+    color: white;
+  }
+  &_flying {
+    background-color: rgb(86, 206, 228);
+  }
+  &_poison {
+    background-color: rgb(156, 51, 156);
+    color: white;
+  }
+  &_ground {
+    background-color: rgb(114, 43, 43);
+    color:white
+  }
+  &_rock {
+    background-color: rgb(73, 54, 54);
+    color: white;
+  }
+  &_bug {
+    background-color: rgb(97, 228, 97);
+  }
+  &_ghost{
+    background-color: rgb(219, 235, 219);
+  }
+  &_steel{
+    background-color: silver;
+  }
+  &_fire{
+    background-color: orangered;
+  }
+  &_water {
+    background-color: rgb(175, 220, 235);
+  }
+  &_grass {
+    background-color: rgba(0, 128, 0, 0.726);
+  }
+  &_electric{
+    background-color: rgb(214, 155, 44);
+  }
+  &_psychic{
+    background-color: rgb(75, 9, 83);
+    color: white;
+  }
+  &_ice {
+    background-color: rgb(188, 238, 230);
+  }
+  &_dragon{
+    background-color: orange;
+  }
+  &_dark {
+    background-color: rgb(4, 4, 92);
+    color:white
+  }
+  &_fairy {
+    background-color: yellow;
+  }
+  &_unknown {
+    background-color: black;
+    color: white;
+  }
+  &_shadow {
+    background-color: gray;
+  }
+}

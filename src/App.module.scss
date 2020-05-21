@@ -1,0 +1,32 @@
+.page {
+  &__container {
+    padding: 50px;
+  }
+
+  &__header {
+    border: 1px solid black;
+    text-align: center;
+    width: fit-content;
+    padding: 10px 70px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & > * {
+      flex: 1;
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .page {
+    &__container {
+      padding: 10px;
+    }
+  }
+}

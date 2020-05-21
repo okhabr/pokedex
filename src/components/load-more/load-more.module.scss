@@ -1,0 +1,16 @@
+.loadMore {
+  width: 95%;
+  display: block;
+  background-color: rgb(9, 168, 241);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
