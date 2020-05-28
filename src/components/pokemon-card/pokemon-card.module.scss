@@ -37,3 +37,24 @@
     }
   }
 }
+
+@media screen and (max-width: 441px) {
+  .pokemon {
+  &__container {
+    width: 90%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  &__typesContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__pic {
+    & > img {
+      width: 90px;
+    }
+  }
+}
+}

@@ -14,3 +14,10 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 741px) {
+  .loadMore {
+    width: 130px;
+    margin: 20px auto;
+  }
+}

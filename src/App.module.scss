@@ -23,10 +23,17 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 741px) {
   .page {
     &__container {
       padding: 10px;
+    }
+
+    &__content {
+      flex-direction: column;
+      &_list {
+        order: 2
+      }
     }
   }
 }
